@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>agent-render</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: Inter;
+          src: url("assets/fonts/inter.woff2") format("woff2");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        #launch-root {
+          --paper: #edf0e8;
+          --forest: #193628;
+          --lime: #d5f17b;
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: var(--forest);
+          color: var(--paper);
+          font-family: Inter, sans-serif;
+        }
+        #launch-root * {
+          box-sizing: border-box;
+        }
+        #launch-content {
+          width: 100%;
+          height: 100%;
+          padding: 72px 80px 68px;
+          display: flex;
+          flex-direction: column;
+          gap: 36px;
+        }
+        .launch-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #60755f;
+          padding-bottom: 26px;
+        }
+        .launch-brand {
+          font-size: 38px;
+          font-weight: 750;
+          letter-spacing: -1.5px;
+        }
+        .launch-label {
+          font-size: 24px;
+          letter-spacing: 2px;
+          color: var(--lime);
+        }
+        .launch-main {
+          display: grid;
+          grid-template-columns: 820px 560px;
+          gap: 60px;
+          align-items: center;
+          flex: 1;
+        }
+        .launch-caption-block {
+          transform-origin: 0% 0%;
+          margin: 0;
+          line-height: 1.03;
+          letter-spacing: -7px;
+          font-weight: 750;
+        }
+        .launch-caption-line {
+          display: block;
+          font-size: 113px;
+          white-space: nowrap;
+        }
+        .launch-word {
+          display: inline-block;
+          transform-origin: 0% 100%;
+        }
+        .launch-emphasis {
+          color: var(--lime);
+        }
+        .launch-sub span {
+          display: block;
+        }
+        .launch-sub {
+          font-size: 28px;
+          line-height: 1.45;
+          letter-spacing: -0.3px;
+          margin: 34px 0 0;
+          max-width: 750px;
+        }
+        .launch-proof {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          width: 560px;
+        }
+        .launch-proof-label {
+          font-size: 21px;
+          letter-spacing: 1px;
+          color: var(--lime);
+          display: flex;
+          justify-content: space-between;
+        }
+        /* Customized slot-and-divider mechanic from installed before-after-wipe. */
+        .launch-baw-stage {
+          --baw-split: 0;
+          position: relative;
+          width: 560px;
+          height: 405px;
+          overflow: hidden;
+          border-radius: 18px;
+          border: 1px solid #72916c;
+          background: var(--forest);
+          box-shadow: 0 24px 56px #10251b;
+        }
+        .launch-baw-panel {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+        .launch-baw-before {
+          padding: 36px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 32px;
+          background: var(--forest);
+        }
+        .launch-command {
+          font-family: monospace;
+          font-size: 26px;
+          line-height: 1.6;
+          color: var(--paper);
+          white-space: pre-wrap;
+          margin: 0;
+        }
+        .launch-prompt {
+          color: var(--lime);
+        }
+        .launch-file {
+          font-size: 21px;
+          color: var(--lime);
+          letter-spacing: 1px;
+        }
+        .launch-baw-after {
+          clip-path: inset(0 calc((100 - var(--baw-split)) * 1%) 0 0);
+          z-index: 2;
+          background: var(--paper);
+        }
+        .launch-baw-after img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .launch-baw-divider {
+          position: absolute;
+          z-index: 3;
+          top: 0;
+          bottom: 0;
+          left: calc(var(--baw-split) * 1%);
+          width: 3px;
+          background: var(--lime);
+        }
+        .launch-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 35px;
+          padding-top: 24px;
+          border-top: 1px solid #60755f;
+        }
+        .launch-url {
+          font-size: 36px;
+          letter-spacing: -1px;
+          color: var(--lime);
+          white-space: nowrap;
+        }
+        .launch-footer-label {
+          font-size: 24px;
+          letter-spacing: 0.2px;
+        }
+      </style>
+      <div data-hf-id="hf-8bn7" id="launch-root" data-composition-id="launch" data-duration="4" data-fps="30" data-width="1600" data-height="900">
+        <div data-hf-id="hf-binm" id="launch-scene" class="clip" data-start="0" data-duration="4" data-track-index="0">
+          <div data-hf-id="hf-l708" id="launch-content">
+            <header data-hf-id="hf-2s7b" class="launch-top">
+              <span data-hf-id="hf-fhzo" class="launch-brand">agent-render</span><span data-hf-id="hf-xpfg" class="launch-label">CLI + MCP</span>
+            </header>
+            <div data-hf-id="hf-hz81" class="launch-main">
+              <div data-hf-id="hf-yeow">
+                <h1 data-hf-id="hf-nety" class="launch-caption-block">
+                  <span data-hf-id="hf-nqck" class="launch-caption-line"><span data-hf-id="hf-p4xm" id="launch-code" class="launch-word">Code in.</span></span><span data-hf-id="hf-46ik" id="launch-screen" class="launch-caption-line launch-emphasis">Screenshot</span><span data-hf-id="hf-ovba" id="launch-out" class="launch-caption-line launch-emphasis">out.</span>
+                </h1>
+                <p data-hf-id="hf-eiyx" id="launch-sub" class="launch-sub">
+                  <span data-hf-id="hf-c04k">React · TSX · JSX · HTML · text</span><span data-hf-id="hf-y9dw">One tool. A faster feedback loop.</span>
+                </p>
+              </div>
+              <div data-hf-id="hf-ypdo" class="launch-proof">
+                <div data-hf-id="hf-k50h" class="launch-proof-label">
+                  <span data-hf-id="hf-nlhu">INPUT → OUTPUT</span><span data-hf-id="hf-blm8">PNG</span>
+                </div>
+                <div data-hf-id="hf-zxoq" id="launch-proof-stage" class="launch-baw-stage">
+                  <div data-hf-id="hf-qft0" class="launch-baw-panel launch-baw-before" data-slot="before">
+                    <span data-hf-id="hf-tnv2" class="launch-file">examples/card.tsx</span>
+                    <pre data-hf-id="hf-u9dp" class="launch-command"><span data-hf-id="hf-decx" class="launch-prompt">$</span> agent-render render
+  examples/card.tsx
+  -o card.png</pre>
+                  </div>
+                  <div data-hf-id="hf-metm" class="launch-baw-panel launch-baw-after" data-slot="after">
+                    <img data-hf-id="hf-wo2p" id="launch-screenshot" src="assets/card.png" width="900" height="650" alt="Real agent-render screenshot output">
+                  </div>
+                  <div data-hf-id="hf-k528" class="launch-baw-divider"></div>
+                </div>
+              </div>
+            </div>
+            <footer data-hf-id="hf-ai2p" class="launch-footer">
+              <span data-hf-id="hf-zja5" id="launch-url" class="launch-url">agent-render.kierkegaard.space</span><span data-hf-id="hf-4xww" id="launch-ready" class="launch-footer-label">Built for agent iteration ↗</span>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function () {
+          // Editorial Emphasis registry: word scale-settle and large emphasis line entry.
+          // Before After Wipe registry: one CSS scalar owns after-slot clip and divider.
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(
+            "#launch-code",
+            { opacity: 0, scale: 1.12 },
+            { opacity: 1, scale: 1, duration: 0.22, ease: "power2.out" },
+            0.15
+          );
+          tl.fromTo(
+            "#launch-screen",
+            { opacity: 0, x: -75 },
+            { opacity: 1, x: 0, duration: 0.38, ease: "expo.out" },
+            0.35
+          );
+          tl.fromTo(
+            "#launch-out",
+            { opacity: 0, y: 25 },
+            { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" },
+            0.5
+          );
+          tl.fromTo(
+            "#launch-sub",
+            { autoAlpha: 0 },
+            { autoAlpha: 1, duration: 0.2, ease: "sine.out" },
+            0.8
+          );
+          tl.fromTo(
+            "#launch-proof-stage",
+            { "--baw-split": 0 },
+            { "--baw-split": 100, duration: 0.65, ease: "sine.inOut" },
+            1.15
+          );
+          tl.fromTo(
+            ".launch-file, .launch-command",
+            { autoAlpha: 1 },
+            { autoAlpha: 0, duration: 0.25, ease: "power2.in" },
+            1.15,
+          );
+          tl.fromTo(
+            "#launch-url",
+            { opacity: 0, x: 18 },
+            { opacity: 1, x: 0, duration: 0.25, ease: "power4.out" },
+            2.3
+          );
+          tl.fromTo(
+            "#launch-ready",
+            { opacity: 0 },
+            { opacity: 1, duration: 0.18, ease: "power1.out" },
+            2.5
+          );
+          tl.to({}, { duration: 4 }, 0);
+          window.__timelines["launch"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

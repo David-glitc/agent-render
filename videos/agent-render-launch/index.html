@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1600,height=900">
+    <title>agent-render launch</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1600px;
+        height: 900px;
+        overflow: hidden;
+        background: #193628;
+      }
+      #stage {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-37fz" id="stage" data-composition-id="main" data-start="0" data-duration="4" data-fps="30" data-width="1600" data-height="900">
+      <div data-hf-id="hf-9e8t" id="launch" class="clip" data-composition-id="launch" data-composition-src="compositions/index.html" data-start="0" data-duration="4" data-track-index="0" data-width="1600" data-height="900"></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 4 }, 0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

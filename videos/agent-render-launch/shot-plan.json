@@ -1,0 +1,59 @@
+{
+  "category": "kinetic-type",
+  "duration_s": 4,
+  "fps": 30,
+  "canvas": {
+    "w": 1600,
+    "h": 900,
+    "aspect": "16:9"
+  },
+  "style": "Precise editorial developer launch. Dominant type anchored left, real output on the right. One decisive reveal then readable still lockup.",
+  "palette": ["#edf0e8", "#193628", "#d5f17b"],
+  "font": "Inter",
+  "beats": [0.15, 1.15, 2.7],
+  "export": "mp4",
+  "asset_needs": [],
+  "shot_brief": "Code in. rises on a forest stage, Screenshot out. answers in lime. A short literal CLI invocation turns into the real card output at right. The brand and URL settle and remain readable for the final 1.3 seconds.",
+  "block": "caption-editorial-emphasis",
+  "customize": {
+    "font": "Inter",
+    "headline": ["Code in.", "Screenshot out."],
+    "emphasis": "Screenshot",
+    "layout": "Left 900px headline column, right 480px real output card; 80px safety margin. URL baseline footer 38px.",
+    "duration": 4
+  },
+  "content": {
+    "block": "caption-editorial-emphasis",
+    "supporting_blocks": ["before-after-wipe"],
+    "customize": {
+      "type": "Replace dual-font scale with same-family heavy Inter, offwhite and lime on forest. Keep registry emphasis and seekable entrance mechanics.",
+      "proof": "Customize before-after-wipe slots with literal agent-render render examples/card.tsx -o card.png command and actual assets/card.png screenshot. Timing wipe 1.15\u20131.65.",
+      "finish": "Keep all primary content visible after reveal; agent-render and URL settle by 2.7 and hold through 4.0."
+    },
+    "scenes": [
+      {
+        "id": "launch",
+        "start": 0,
+        "end": 4,
+        "text": "Code in. Screenshot out.",
+        "emphasis_words": ["Screenshot"],
+        "emotion": "confident, quick, legible",
+        "motion": "Editorial emphasis entrance 0.15\u20130.7; proof panel wipe 1.15\u20131.65; footer label resolves 2.4\u20132.7; hold still final 1.3 seconds.",
+        "beats": [0.15, 1.15, 2.7]
+      }
+    ]
+  },
+  "local_assets": [
+    {
+      "source": "/home/david/agent-render/artifacts/card.png",
+      "destination": "assets/card.png",
+      "role": "Actual output from examples/card.tsx"
+    }
+  ],
+  "constraints": [
+    "No narration or audio track.",
+    "No fade to blank.",
+    "Final name and full URL readable from 2.7 through 4.0.",
+    "Use a real screenshot, no fabricated UI."
+  ]
+}
