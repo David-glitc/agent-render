@@ -2,30 +2,32 @@
 workflow: motion-graphics
 flow: automation
 storyboard: no
-message: "Code in. Screenshot out."
-destination: x-feed
+message: "agent-render"
+destination: x-feed-and-landing
 aspect: 1600x900
 language: en
 audience: developers building agents
 length: 4s
-angle: code-to-image
+angle: abstract-brand-teaser
 narration: no
 ---
 
 ## Intent
 
-Launch agent-render in a short, confident visual that makes the local code-to-screenshot workflow immediately understandable. The user requested a four-second launch video attached to the first launch tweet. Creation, rendering, and posting were explicitly authorized in that request.
+Replace the previous explainer with a musical motion-graphics teaser. The user explicitly asked for black and blue, elements and movement, and musical sound. The reference informs restraint and contrast, not a webpage recreation. Motion carries the message. The only copy is the final agent-render identity.
 
-## Assets
+## Direction
 
-- /home/david/agent-render/artifacts/card.png — real screenshot output, optional proof visual.
+Near-black #000000, electric blue #2463FF, white #F5F7FF. Four thick rectangular planes sweep, pivot, and converge into a hollow screen aperture. On the next musical accent, the aperture rushes forward to fill the frame blue; the white brand lands decisively. One background snap returns the finished identity to black. Hold the final lockup for the last second. No screenshot, code, features, URL, CTA, or narration.
 
-## Customizations
+## Rhythm and sound
 
-- Offwhite #edf0e8, forest #193628, lime #d5f17b; large sans-serif type.
-- Headline: Code in. Screenshot out.
-- Final lockup: agent-render and agent-render.kierkegaard.space, readable for at least one second.
+Exactly 4.000 seconds, 1600×900, 30fps. Musical electronic sting at 120bpm with accents at 0, 0.5, 1, 1.5, 2, 2.5 and 3 seconds. Tonal synth plucks, tight low pulse, stereo air for the aperture rush, final chord with a clean tail. Parent agent sources audio. Final MP4 must contain the audio stream.
 
-## Notes
+## Reuse
 
-Exactly 4 seconds at 30 fps. Landscape is a production choice for the landing page and X feed. Intentionally silent: no narration, music, or audio track. No fake UI. Final delivery H.264 MP4, yuv420p, faststart. The user's existing authorization satisfies the render gate under the governing developer instructions; inspect proof snapshots and open Studio before rendering.
+Live catalog queried for the actual moves. Reuse and customize logo-brand-close for identity assembly, panel-reveal for planar expansion, and ui-3d-reveal for perspective arrival. Remove catalog demo content. Adapt the supported primitives to the single aperture motif; preserve seek-safe timeline mechanics.
+
+## Delivery
+
+H.264 MP4, yuv420p, faststart, 120 frames; audible music, no narration. Verify full decode, duration, resolution and actual audio presence. Inspect motion samples and final lockup before handoff.

@@ -20,6 +20,21 @@
       "name": "before-after-wipe",
       "type": "hyperframes:component",
       "target": "compositions/components/before-after-wipe.html"
+    },
+    {
+      "name": "logo-brand-close",
+      "type": "hyperframes:component",
+      "target": "compositions/components/logo-brand-close.html"
+    },
+    {
+      "name": "panel-reveal",
+      "type": "hyperframes:component",
+      "target": "compositions/components/panel-reveal.html"
+    },
+    {
+      "name": "ui-3d-reveal",
+      "type": "hyperframes:block",
+      "target": "compositions/ui-3d-reveal.html"
     }
   ]
 }

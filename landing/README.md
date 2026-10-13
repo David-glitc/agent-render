@@ -2,7 +2,7 @@
 
 Static HTML/CSS/JS served by Cloudflare Pages at https://agent-render.kierkegaard.space/.
 
-Public files live only in `public/`. `demo.png` is rendered by this repository's CLI from `examples/landing-demo.tsx`. The launch film is a four-second HyperFrames export; source lives in `videos/agent-render-launch/`.
+Public files live only in `public/`. `demo.png` is rendered by this repository's CLI from `examples/landing-demo.tsx`. The launch teaser is a four-second black and blue motion graphic with an original electronic musical sting; its HyperFrames source and audio generator live in `videos/agent-render-launch/`. The Watch button starts playback with sound after a user click. CLI/MCP/curl tabs expose working local usage examples. Inter fonts are served locally under the included SIL Open Font License.
 
 Preview from the repository root:
 

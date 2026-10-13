@@ -1,4 +1,7 @@
 {
   "compositions/components/before-after-wipe.html": "c04e8bf1bfbcec71d0921a03a786cc09e660732428aa04bf79036a30b7755e09",
-  "compositions/components/caption-editorial-emphasis.html": "6144571b6c73dbdec282284fe2277d3c958e15cddaf362295ba9cca02e705d1c"
+  "compositions/components/caption-editorial-emphasis.html": "6144571b6c73dbdec282284fe2277d3c958e15cddaf362295ba9cca02e705d1c",
+  "compositions/components/logo-brand-close.html": "afd249a6bf34702f71a9bf4464adbe8f2dd3a768f9729701ee4a57f205991089",
+  "compositions/components/panel-reveal.html": "0fbb1c9685a80e10e577d405544bf8db35ec1a27cb0c8bed55a4a1f5fd88d376",
+  "compositions/ui-3d-reveal.html": "d8c4b5e1bf8fdb85eca5d975c23914a849d987d577a6ea3b1a4a270464f789b8"
 }

@@ -7,53 +7,144 @@
     "h": 900,
     "aspect": "16:9"
   },
-  "style": "Precise editorial developer launch. Dominant type anchored left, real output on the right. One decisive reveal then readable still lockup.",
-  "palette": ["#edf0e8", "#193628", "#d5f17b"],
+  "style": "Black and electric blue. High-contrast geometric brand sting: sharp rectangular planes, decisive perspective, snap acceleration, generous negative space. Motion carries the message; typography is only the final identity.",
+  "palette": [
+    "#000000",
+    "#2463FF",
+    "#F5F7FF"
+  ],
   "font": "Inter",
-  "beats": [0.15, 1.15, 2.7],
+  "beats": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3
+  ],
   "export": "mp4",
   "asset_needs": [],
-  "shot_brief": "Code in. rises on a forest stage, Screenshot out. answers in lime. A short literal CLI invocation turns into the real card output at right. The brand and URL settle and remain readable for the final 1.3 seconds.",
-  "block": "caption-editorial-emphasis",
+  "shot_brief": "Blue slivers cut across a near-black field on a musical electronic pulse. Rectangular planes swivel and converge into one hollow screen aperture. The aperture rushes toward camera and becomes a blue full-frame impact; agent-render lands large in white, then the field snaps back to black with a small blue aperture beside the centered identity. Hold the finished brand for the last second as the music resolves. No interface, code, features, or explanatory copy.",
+  "block": "logo-brand-close",
   "customize": {
+    "text": "agent-render",
+    "palette": [
+      "#000000",
+      "#2463FF",
+      "#F5F7FF"
+    ],
     "font": "Inter",
-    "headline": ["Code in.", "Screenshot out."],
-    "emphasis": "Screenshot",
-    "layout": "Left 900px headline column, right 480px real output card; 80px safety margin. URL baseline footer 38px.",
+    "layout": "1600x900, centered identity, 110px edge safety, 180px brand type; screen aperture uses a 16:9 proportion and thick flat blue edges.",
     "duration": 4
   },
   "content": {
-    "block": "caption-editorial-emphasis",
-    "supporting_blocks": ["before-after-wipe"],
+    "block": "logo-brand-close",
+    "supporting_blocks": [
+      "panel-reveal",
+      "ui-3d-reveal"
+    ],
     "customize": {
-      "type": "Replace dual-font scale with same-family heavy Inter, offwhite and lime on forest. Keep registry emphasis and seekable entrance mechanics.",
-      "proof": "Customize before-after-wipe slots with literal agent-render render examples/card.tsx -o card.png command and actual assets/card.png screenshot. Timing wipe 1.15\u20131.65.",
-      "finish": "Keep all primary content visible after reveal; agent-render and URL settle by 2.7 and hold through 4.0."
+      "panel-reveal": "Reuse timeline and height expansion mechanics for four blue rectangular planes. Remove all example content. Their shared negative space becomes an empty screen aperture.",
+      "ui-3d-reveal": "Reuse seek-safe perspective arrival for the abstract plane group. The slotted content is flat geometry only. Limit tilt to 25 degrees and favor large simple silhouettes.",
+      "logo-brand-close": "Use the actual string agent-render, Inter heavy, white. Remove tagline, URL, punctuation additions and any CTA. Land text at 2.0; switch full blue field back to black at 2.5; settle the final blue aperture + white wordmark by 3.0 and hold still."
     },
     "scenes": [
       {
-        "id": "launch",
+        "id": "hook",
         "start": 0,
+        "end": 1,
+        "text": "",
+        "emphasis_words": [],
+        "emotion": "immediate, taut",
+        "motion": "Visible blue slivers begin already on screen at t=0. Opposed planes slash inward with tight power4.out deceleration at 0 and 0.5. They share one rectangular motif; no confetti or random particles.",
+        "beats": [
+          0,
+          0.5
+        ]
+      },
+      {
+        "id": "aperture",
+        "start": 1,
+        "end": 2,
+        "text": "",
+        "emphasis_words": [],
+        "emotion": "precise, forceful",
+        "motion": "Four blue planes snap into a hollow 16:9 aperture at 1.0; settle for 0.2s. At 1.5 the aperture rotates to face camera and surges forward until blue fills the frame at 1.9. Keep a real negative-space hole visible during assembly.",
+        "beats": [
+          1,
+          1.5
+        ]
+      },
+      {
+        "id": "impact",
+        "start": 2,
+        "end": 3,
+        "text": "agent-render",
+        "emphasis_words": [
+          "agent-render"
+        ],
+        "emotion": "confident, sharp",
+        "motion": "Large white brand lands on blue at 2.0 using logo-brand-close letter cascade compressed to 0.22s; no excess bounce. At 2.5 snap the background to black while the geometry resolves into a small blue aperture left of the wordmark. All translation finishes by 3.0.",
+        "beats": [
+          2,
+          2.5
+        ]
+      },
+      {
+        "id": "resolve",
+        "start": 3,
         "end": 4,
-        "text": "Code in. Screenshot out.",
-        "emphasis_words": ["Screenshot"],
-        "emotion": "confident, quick, legible",
-        "motion": "Editorial emphasis entrance 0.15\u20130.7; proof panel wipe 1.15\u20131.65; footer label resolves 2.4\u20132.7; hold still final 1.3 seconds.",
-        "beats": [0.15, 1.15, 2.7]
+        "text": "agent-render",
+        "emphasis_words": [
+          "agent-render"
+        ],
+        "emotion": "assured",
+        "motion": "Hold the centered blue aperture plus white brand still for one full second. Musical tonic resolves at 3.0, short warm tail ends cleanly at 4.0. No visual fade to black.",
+        "beats": [
+          3
+        ]
       }
     ]
   },
-  "local_assets": [
+  "audio": {
+    "required": true,
+    "kind": "musical electronic brand sting",
+    "duration_s": 4,
+    "tempo_bpm": 120,
+    "accent_seconds": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+    ],
+    "direction": "Tonal plucked synth motif, tight low kick/sub pulse, brief stereo air on the aperture rush, resolved chord at 3s with controlled tail. Music, not only whooshes. No voice. Parent sources final audio."
+  },
+  "catalog_searches": [
     {
-      "source": "/home/david/agent-render/artifacts/card.png",
-      "destination": "assets/card.png",
-      "role": "Actual output from examples/card.tsx"
+      "query": "rectangular planes converge aperture frame kinetic typography",
+      "selected": [
+        "logo-brand-close"
+      ]
+    },
+    {
+      "query": "geometric panels converge reveal",
+      "selected": [
+        "panel-reveal",
+        "ui-3d-reveal"
+      ]
     }
   ],
   "constraints": [
-    "No narration or audio track.",
-    "No fade to blank.",
-    "Final name and full URL readable from 2.7 through 4.0.",
-    "Use a real screenshot, no fabricated UI."
+    "Exactly 120 frames and 4.000 seconds.",
+    "Use actual audible musical audio track; no narration.",
+    "No screenshots, code, feature lists, tagline, URL, browser frames, pills, or explanatory sections.",
+    "Only black, electric blue and white.",
+    "One geometric motif, a hollow screen aperture.",
+    "Final identity held readable from 3.0 through 4.0.",
+    "No random runtime logic or CSS animation; seek-safe root GSAP timeline."
   ]
 }

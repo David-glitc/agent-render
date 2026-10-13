@@ -15,7 +15,7 @@
         width: 1600px;
         height: 900px;
         overflow: hidden;
-        background: #193628;
+        background: #000000;
       }
       #stage {
         position: relative;
@@ -33,10 +33,10 @@
   <body>
     <div data-hf-id="hf-37fz" id="stage" data-composition-id="main" data-start="0" data-duration="4" data-fps="30" data-width="1600" data-height="900">
       <div data-hf-id="hf-9e8t" id="launch" class="clip" data-composition-id="launch" data-composition-src="compositions/index.html" data-start="0" data-duration="4" data-track-index="0" data-width="1600" data-height="900"></div>
+      <audio data-hf-id="hf-jre7" id="musical-sting" src="assets/audio/teaser-sting.wav" data-start="0" data-duration="4" data-track-index="2" data-volume="1"></audio>
     </div>
     <script>
       const tl = gsap.timeline({ paused: true });
-      tl.to({}, { duration: 4 }, 0);
       window.__timelines["main"] = tl;
       tl.seek(0);
     </script>

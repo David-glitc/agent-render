@@ -1,0 +1,21 @@
+{
+  "asset": "assets/audio/teaser-sting.wav",
+  "kind": "original musical sting",
+  "durationSeconds": 4,
+  "sampleRate": 48000,
+  "channels": 2,
+  "tempoBpm": 120,
+  "key": "C minor",
+  "source": "scripts/compose-sting.py",
+  "thirdPartySamples": false,
+  "sha256": "08e7b07509a0903cf3a57518cab5edf6fc138681278c175080119db279e358f8",
+  "accentsSeconds": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3
+  ]
+}

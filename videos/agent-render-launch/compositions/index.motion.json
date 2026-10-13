@@ -1,0 +1,11 @@
+{
+  "duration": 4,
+  "assertions": [
+    {"kind": "appearsBy", "selector": "#plane-top", "bySec": 0.05},
+    {"kind": "appearsBy", "selector": ".letter", "bySec": 2.4},
+    {"kind": "appearsBy", "selector": "#identity-icon", "bySec": 2.95},
+    {"kind": "before", "a": "#plane-top", "b": ".letter"},
+    {"kind": "staysInFrame", "selector": "#wordmark"},
+    {"kind": "keepsMoving", "withinSelector": "#teaser-scene", "maxStaticSec": 1.3}
+  ]
+}
