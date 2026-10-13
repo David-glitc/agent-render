@@ -1,0 +1,8 @@
+Built agent-render so agents can see what they build.
+
+React, TSX, JSX, HTML, text or a URL → screenshot.
+
+CLI + MCP + HTTP. Drop code, get an image, make the next edit.
+
+Open source. Runs locally.
+https://agent-render.kierkegaard.space

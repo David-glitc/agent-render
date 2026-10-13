@@ -6,3 +6,13 @@ dist/
 .DS_Store
 artifacts/
 *.png
+!landing/public/*.png
+!landing/public/*.jpg
+landing/checks/
+videos/**/renders/
+videos/**/.hyperframes/
+videos/**/node_modules/
+
+__pycache__/
+*.pyc
+!videos/**/assets/*.png
