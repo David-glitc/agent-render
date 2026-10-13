@@ -152,6 +152,10 @@ export class Renderer {
             .waitFor({ state: "visible" });
         }
         await page.evaluate(async () => {
+          // Screenshot captures have no scrolling user to trigger lazy images.
+          for (const image of document.images) {
+            image.loading = "eager";
+          }
           await document.fonts.ready;
           await Promise.all(
             [...document.images].map(async (img) => {

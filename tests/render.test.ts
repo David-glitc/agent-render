@@ -181,6 +181,16 @@ describe("real Chromium output", () => {
     });
     expect(result.height).toBe(1100);
   });
+  it("loads offscreen lazy images before a full-page capture", async () => {
+    const result = await renderer.render({
+      code: '<body style="margin:0"><div style="height:4000px"></div><img loading="lazy" width="100" height="100" src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Cpath fill=%22red%22 d=%22M0 0h100v100H0z%22/%3E%3C/svg%3E"></body>',
+      fullPage: true,
+      width: 100,
+      height: 100,
+    });
+    expect(result.warnings).toEqual([]);
+    expect(pixel(result.image, 50, 4050)).toEqual([255, 0, 0]);
+  });
   it("reports browser exceptions without hiding the screenshot", async () => {
     const result = await renderer.render({
       code: '<h1>Still visible</h1><script>throw new Error("fixture failure")</script>',
